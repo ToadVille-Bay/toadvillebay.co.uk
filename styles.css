@@ -57,6 +57,132 @@ body {
     background: var(--tvb-primary-dark);
 }
 
+/* Timeline styles for TBExit27 */
+.timeline-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.timeline-section h2 {
+    color: var(--tvb-text);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: rgba(59, 130, 246, 0.3);
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.timeline-date {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--tvb-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.timeline-content {
+    background: var(--tvb-surface-2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    width: 300px;
+}
+
+.timeline-content h3 {
+    color: var(--tvb-text);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-content p {
+    color: var(--tvb-muted);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.final-shutdown .timeline-date {
+    background: rgba(220, 38, 38, 0.1);
+    color: rgb(220, 38, 38);
+    border-color: rgba(220, 38, 38, 0.2);
+}
+
+.notice-box {
+    background: var(--tvb-surface-2);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.notice-box h3 {
+    color: var(--tvb-primary);
+    margin-bottom: 1rem;
+}
+
+.notice-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notice-box li {
+    color: var(--tvb-text);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.notice-box li::before {
+    content: '•';
+    color: var(--tvb-primary);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+
+    .timeline-date {
+        min-width: auto;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+}
+
 /* Center the landing card only on the landing page */
 body.landing {
     background: #000; /* fallback while image loads */
