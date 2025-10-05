@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToadVille Bay Exit 27 - Operation Shutdown Timeline</title>
+    <meta content="ToadVille Bay Exit 27 - Timeline of USA Operations Closure" property="og:title" />
+    <meta content="Official timeline and information about ToadVille Bay's exit from United States operations." property="og:description" />
+    <meta content="https://toadvillebay.com/TBExit27.html" property="og:url" />
+    <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+    <link rel="icon" type="image/png" href="./Images and Videos/ToadVilleCOA.png" />
+    <link rel="apple-touch-icon" href="./Images and Videos/ToadVilleCOA.png" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-content {
+            background: var(--tvb-bg);
+        }
+        
+        .exit-hero {
+            background: var(--tvb-surface-2);
+            padding: 3rem 0;
+        }
+
+        .exit-hero .hero__content {
+            text-align: center;
+        }
+
+        .exit-hero h1 {
+            color: var(--tvb-text);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .exit-hero p {
+            color: var(--tvb-muted);
+            font-size: 1.2rem;
+        }
+
+        .timeline-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .timeline-section h2 {
+            color: var(--tvb-text);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, var(--tvb-surface-alt), white);
+        }
+
+        .profile-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--tvb-primary);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            background: white;
+            animation: gentle-bounce 3s ease-in-out infinite;
+        }
+
+        .profile-image:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 2.5em;
+            color: var(--tvb-primary);
+            margin-bottom: 10px;
+        }
+
+        .profile-title {
+            font-size: 1.2em;
+            color: var(--tvb-text);
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .profile-bio {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            color: var(--tvb-text);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .about-card {
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .about-card h2 {
+            color: var(--tvb-primary);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .about-card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: var(--tvb-text);
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--tvb-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            background: var(--tvb-primary-dark);
+            transform: scale(1.05);
+        }
+
+        .legal-section {
+            background: var(--tvb-surface-alt);
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .legal-card {
+            background: rgb(0, 0, 0);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .legal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .legal-card h3 {
+            color: var(--tvb-primary);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .legal-card p {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: var(--tvb-text);
+            opacity: 0.9;
+        }
+
+        .legal-card .cta-button {
+            background: var(--tvb-primary);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .legal-card .cta-button:hover {
+            background: var(--tvb-primary-dark);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2em;
+            }
+
+            .about-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="site-header__top">
+            <a class="site-brand" href="/index.html">
+                <img src="Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+                <span class="brand-text">ToadVille Bay</span>
+            </a>
+            <div class="site-utils">
+                <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+                    <label for="q" class="sr-only">Search ToadVille Bay</label>
+                    <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="page-content">
+        <section class="hero exit-hero">
+            <div class="hero__content">
+                <h1>ToadVille Bay Exit 27</h1>
+                <p>Official Timeline of USA Operations Closure</p>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Shutdown Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">03 December 2023</div>
+                    <div class="timeline-content">
+                        <h3>ToadVille Bay Insiders USA</h3>
+                        <p>End of USA Insiders program operations</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">15 June 2024</div>
+                    <div class="timeline-content">
+                        <h3>GhostVista Gets Grounded USA</h3>
+                        <p>Complete shutdown of GhostVista Gets Grounded operations</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">27 July 2025</div>
+                    <div class="timeline-content">
+                        <h3>Head Admin USA (Roblox)</h3>
+                        <p>Discontinuation of Head Admin services in USA region</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">10 January 2026</div>
+                    <div class="timeline-content">
+                        <h3>The Restaurant USA (Roblox)</h3>
+                        <p>Closure of The Restaurant operations in USA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item final-shutdown">
+                    <div class="timeline-date">27 September 2027</div>
+                    <div class="timeline-content">
+                        <h3>ToadVille Bay USA</h3>
+                        <p>Final closure of all ToadVille Bay Corporation operations in the United States</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="page-content dark-theme">
+        <section class="hero exit-hero">
+            <div class="hero__content">
+                <h1>ToadVille Bay Exit 27</h1>
+                <p>Official Timeline of USA Operations Closure</p>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Shutdown Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">03 December 2023</div>
+                    <div class="timeline-content">
+                        <h3>ToadVille Bay Insiders USA</h3>
+                        <p>End of USA Insiders program operations</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">15 June 2024</div>
+                    <div class="timeline-content">
+                        <h3>GhostVista Gets Grounded USA</h3>
+                        <p>Complete shutdown of GhostVista Gets Grounded operations</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">27 July 2025</div>
+                    <div class="timeline-content">
+                        <h3>Head Admin USA (Roblox)</h3>
+                        <p>Discontinuation of Head Admin services in USA region</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">10 January 2026</div>
+                    <div class="timeline-content">
+                        <h3>The Restaurant USA (Roblox)</h3>
+                        <p>Closure of The Restaurant operations in USA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item final-shutdown">
+                    <div class="timeline-date">27 September 2027</div>
+                    <div class="timeline-content">
+                        <h3>ToadVille Bay USA</h3>
+                        <p>Final closure of all ToadVille Bay Corporation operations in the United States</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img class="footer-brand-img" src="Images and Videos/flag.png" alt="ToadVille Bay" />
+            </div>
+            <div class="footer-links-columns">
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="About/community.html">Our community</a></li>
+                        <li><a href="About/departments.html">Departments</a></li>
+                        <li><a href="About/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources/programs-services.html">Programs & services</a></li>
+                        <li><a href="resources/permits-licenses.html">Permits & licenses</a></li>
+                        <li><a href="resources/accessibility.html">Accessibility</a></li>
+                        <li><a href="resources/sitemap.html">Site map</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="Legal/termsofservice.html">Terms of Service</a></li>
+                        <li><a href="Legal/privacy.html">Privacy</a></li>
+                        <li><a href="Legal/communityguidelines.html">Community Guidelines</a></li>
+                        <li><a href="Legal/cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+                    <span class="site-footer-text">© ToadVille Bay 2019–2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/site-search.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
