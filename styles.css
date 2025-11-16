@@ -6,7 +6,7 @@
 
 :root {
     /* Dark theme palette */
-    --tvb-primary: #3b82f6;        /* blue-500 */
+    --tvb-primary: #FF0000;        /* blue-500 */
     --tvb-primary-dark: #2563eb;   /* blue-600 */
     --tvb-accent: #22d3ee;         /* cyan-400 */
     --tvb-text: #e6edf3;           /* light text */
