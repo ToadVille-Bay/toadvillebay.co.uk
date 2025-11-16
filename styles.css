@@ -111,7 +111,7 @@ body.landing {
 }
 
 .nav-btn.secondary {
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(200, 16, 46, 1);
     color: var(--tvb-primary);
     padding: 12px 25px;
     font-weight: 500;
