@@ -6,12 +6,12 @@
 
 :root {
     /* Dark theme palette */
-    --tvb-primary: #FF0000;        /* blue-500 */
+    --tvb-primary: #881313;        /* blue-500 */
     --tvb-primary-dark: #2563eb;   /* blue-600 */
     --tvb-accent: #22d3ee;         /* cyan-400 */
     --tvb-text: #e6edf3;           /* light text */
     --tvb-muted: #9fb0c3;          /* muted text */
-    --tvb-bg: #0b4ac6;             /* app background */
+    --tvb-bg: #0b1220;             /* app background */
     --tvb-surface: #121a2a;        /* cards, surfaces */
     --tvb-surface-2: #0f1726;      /* panels */
     --tvb-border: #1f2a3a;         /* borders */
