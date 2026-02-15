@@ -251,7 +251,7 @@ a:hover {
 /* IMPORTANT: Your old .card made EVERYTHING a link and underlined on hover.
    Now .card is just a "card". If you want clickable cards, use .card-link. */
 .card {
-  background: rgba(18, 26, 42, 0.55);
+  background: rgba(99, 3, 3, 0.55);
   border: 1px solid var(--tvb-border);
   border-radius: var(--tvb-radius);
   padding: 14px;
